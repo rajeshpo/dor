@@ -1,9 +1,11 @@
 import { Switch, Route, BrowserRouter} from "react-router-dom";
 import { Component } from "react";
-import Main from "./Main";
-import Leftnav from "./Leftnav";
-import Main1 from "./Main1";
 
+import Home from "./Home";
+import DataEntry from "./DataEntry";
+import Holidays from './Holidays'
+import Budget from './Budget'
+import Leftnav from "./Leftnav";
 
  class App extends Component{
 
@@ -14,8 +16,10 @@ import Main1 from "./Main1";
             <Leftnav />
            <div className="content">
            <Switch>
-       <Route  exact path="/" component={Main} />
-       <Route  path="/main1"  component={Main1} />
+       <Route  exact path="/" component={Home} />
+       <Route  path="/dataentry"  component={DataEntry} />
+       <Route  path="/budget"  component={Budget} />
+       <Route  path="/holidays"  component={Holidays} />
      
       </Switch>
           </div>

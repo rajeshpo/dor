@@ -22,12 +22,12 @@ export default function Leftnav() {
     </SubMenu>
     <MenuItem icon={<Home/>}><Link to="/">Home</Link></MenuItem>
      <SubMenu title="Data Entry" icon={<Computer />}>
-      <MenuItem><Link to="/main1">OEM</Link></MenuItem>
+      <MenuItem><Link to="/dataentry">OEM</Link></MenuItem>
       <MenuItem>TS</MenuItem>
       <MenuItem>RS</MenuItem>
     </SubMenu>
-    <MenuItem icon={<AccountBalance />}>Budget</MenuItem>
-    <MenuItem icon={<AccessibilityNew />}>Holidays</MenuItem>
+    <MenuItem icon={<AccountBalance />}><Link to="/budget">Budget</Link></MenuItem>
+    <MenuItem icon={<AccessibilityNew />}><Link to="/holidays">Holidays</Link></MenuItem>
     <SubMenu title="Dealer Reports" icon={<LibraryBooks />}>
     <SubMenu title="Automative Reports" icon={<ThreeDRotation />}>
       <MenuItem>Summary by Category</MenuItem>
