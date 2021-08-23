@@ -8,17 +8,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.sidebar{
- height: 100vh;
- 
+.sidebar {
 
+ position:fixed;
+  height: 300vh;
+  z-index:1;
 }
 
 .flex{
   display: flex;
 }
 .content{
-  height: 100vh;
+  height: 300vh;
   width:1000px;
   
 }
@@ -32,7 +33,7 @@
 }
 .main{
   background-color:lightgray;
-  height: 100vh;
+
   
 }
 .heading{
@@ -40,4 +41,32 @@
   top:20px;
   left:45%;
   color:  #e066ff;
+}
+.choose {
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.select {
+
+width:20%;
+  
+}
+.data-entry{
+  position: relative;
+  width:100%;
+  left:27%;
+}
+
+.button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
 }

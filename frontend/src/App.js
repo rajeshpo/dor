@@ -1,6 +1,5 @@
 import { Switch, Route, BrowserRouter} from "react-router-dom";
 import { Component } from "react";
-
 import Home from "./Home";
 import DataEntry from "./DataEntry";
 import Holidays from './Holidays'
